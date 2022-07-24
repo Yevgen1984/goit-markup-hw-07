@@ -65,23 +65,45 @@
       /*header*/
       
       /*container*/
-  
-      .header .container {
+      .container {
+       width: 1200px;
+       margin: 0 auto;
+       padding-left: 15px;
+       padding-right: 15px;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;  
+        
+      }
+       
+      .site-nav__item {
+        margin-right: 50px;
+        }
+      
+      .site-nav__item:last-child {
+        margin-right: 0;
+      }
+
+      .contact {
         display: flex;
         align-items: center;
       }
-  
-      .container {
-        
-        width: 1200px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
+
+      .contact__item:not(:last-child) {  
+        margin: 50px;
+
       }
-         
+      
        /*nav*/
       
     
+
+      .header__nav-link {
+        
+      }
+
       .site-nav {
       display: flex;
       align-items: center;
@@ -154,14 +176,26 @@
       .nav-studio {
       color: var(--studio-text-color);
       }    
+
+    /* logo */
       
-      .nav-web, .nav-studio {
+      .logo {
       font-family: Raleway, sans-serif;
       font-weight: 700;
       font-size: 26px;
       line-height: 1.2;
+      color: var(--accent-color)
       }
       
+      .logo__dark {
+        color: var(--studio-text-color);
+      }
+
+      .logo__light {
+        color: var(--secondary-text-color);
+      }
+
+
       .nav .link {
       color: var(--primary-text-color);
       font-weight: 500;
@@ -300,12 +334,12 @@
         overflow: hidden; 
         }
   
-      .features {
+     /*.features {
         display: flex;
         justify-content: space-between;
         padding-left: 0px;
         padding-right: 0px;
-      }
+      }*/
   
       .feature-title {
       font-size: 14px;
@@ -344,8 +378,7 @@
         padding-top: 0;
       }
   
-       .section-title {
-        width: 376px;
+       .section__title {
         margin-left: auto;
         margin-right: auto;
         font-size: 36px;
@@ -354,14 +387,7 @@
         margin-bottom: 50px;
       }
   
-      .work-items {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0;
-      }
-  
-        
+         
        .work-item {
          flex-basis: calc((100% - 60px) / 3); 
          margin-right: 30px;
@@ -405,16 +431,16 @@
              /*team*/
       
       
-      .team .section-title {
+      .section__title {
         margin-bottom: 50px;
       }
   
-       .team-members {
+       /*.team-members {
         display: flex;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-       }
+       }*/
   
       .team {
         background-color:var(--section-background-color);
@@ -458,28 +484,12 @@
        .team-member {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
        }
-  
-       .social {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-        }
-  
-        .social-item {
-          width: 44px;
-          height: 44px;
-          cursor: pointer;
-        }
-      
-        .social-item:not(:last-child) {
-          margin-right: 8px;
-        }
-  
-      .social-link-item {
+   
+        .socials__link {
         width: 44px;
         height: 44px;
         display: flex;
-        justify-content: center;
+        justify-content: center; 
         align-items: center;
         fill: #AFB1B8;
         border-radius: 50%;
@@ -487,39 +497,36 @@
   
       }
   
-      .social-link-item:hover,
-      .social-link-item:focus {
+      .socials__link:hover,
+      .socials__link:focus {
         background-color: var(--accent-color);
         fill: var(--secondary-text-color);
        
         }
   
-      .social-icon {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .social-icon:hover, .social-icon:focus{
+            
+      .socials__icon:hover, .socials__icon:focus{
         fill: var(--secondary-text-color);
       }
       
-      .social-item:hover .social-icon,
-      .social-item:focus .social-icon
+      .socials-item:hover .socials__icon,
+      .socials-item:focus .socials__icon
       {
         fill: var(--section-background-color);
       }
        /*customers*/
   
-      .section-customers-title {
+      .section__title {
         text-align: center;
       }
   
-        .label-item {
+        .label-list__item {
         width: 170px;
         height: 92px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid var(--contact-text-color);
+        border: 1px solid #AFB1B8;
         border-radius: 4px;
   
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -527,23 +534,35 @@
   
       }
         
-        .label-item:hover, .label-item:focus {
+        .label-list__item:hover, .label-list__item:focus {
          border-color: var(--accent-color);
          cursor: pointer;
          }
   
-         .label-item:hover .social-icon {
+         .label-list__item:hover .socials__icon {
           fill: var(--accent-color);
           cursor: pointer;
          }
   
-       .label-list {
+
+
+
+       /* .label-list, */
+       .card-set {
         display: flex;
-        justify-content: space-between;
+        gap: 30px;
         margin-top: 50px;
+
        }
   
-        .social-icon {
+       .socials {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 30px;       }
+       
+
+        .socials__icon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -552,7 +571,7 @@
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
         } 
       
-        .label-item .social-icon:hover, .label-item .social-icon:focus {
+        .label-list__item .socials__icon:hover, .label-list__item .socials__icon:focus {
           fill: var(--accent-color);
           cursor: pointer;
         }
@@ -597,16 +616,7 @@
         color: var(--secondary-text-color);
       }
   
-      .web {
-        color: var(--accent-color);
-      }
-  
-      .web, .studio {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
-      }
+      
   
       .site-basement .mail, .site-basement .tel {
         text-decoration: none;
@@ -646,10 +656,10 @@
         height: 80px;
         margin-bottom: 0;
         margin-left: 55px;
-        margin-right: 93px;
         padding-left: 0;
+        padding-right: 0;
         padding-bottom: 0;
-        padding-top: 25px;
+        padding-top: 15px;
        
       }
   
@@ -658,29 +668,7 @@
         
       }
   
-      .social.icon-list {
-        margin-bottom: 0;
-        justify-content: space-between;
-      }
-      
-      .social.icon-list .social-icon {
-        fill: var(--secondary-text-color);
-      }
-  
-      .social.icon-list .social-link-item {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-      }
-  
-      .social.icon-list .social-link-item:hover, .social.icon-list .social-link-item:focus {
-        background-color: var(--accent-color);
-      }
-  
-      /*online-section*/
-  
-  
-  
-  
+   
   /*registration-form (sign up)*/
   
   .form-field {
@@ -689,8 +677,7 @@
     margin: 0;
     margin-left: auto;
   
-  /* background-color: var(--secondary-background-color); */
-  /* border-color: rgba(255, 255, 255, 0.3); */
+  
   }
   
   .field-box {
@@ -716,9 +703,7 @@
       margin-bottom: 0;
   }
   
-  
    
-  
     .invite-title {
     font-weight: 700;
     font-size: 14px;
@@ -1074,18 +1059,15 @@
   
   .checkbox:checked+.form__checkbox-icon {
       display: flex;
-      /* border-color: rgba(0, 0, 0, 0); */
+      
       background-color: var(--accent-color);
-      /* background-image: url(../images/icons.svg/icon-agree); */
-      /* background-size: contain; */
+      
       fill: var(--secondary-text-color);
       border:none;
       overflow: hidden;
       opacity: 1;
     }
   
- 
-
      .form__checkbox-text {
       padding-top: 2px;
       font-weight: 400;
