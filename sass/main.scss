@@ -1,5 +1,6 @@
+@import "./utils/vars";
 /*Reset*/
-@import "./reset/reset";
+@import "./utils/reset";
 /*header container*/
 @import "./header/container";
 /*Logo (haeder, footer)*/
@@ -16,5 +17,16 @@
 @import "./customers";
 /*card-set*/
 @import "./card-set";
+/*socials-icon*/
+@import "./utils/socials_icon";
+/*footer*/
+@import "./footer.scss";
+/*features*/
+@import "./features.scss";
 
+@import './portfolio.scss';
+
+@import './hero.scss';
+@import './modal.scss';
+@import './modal_form.scss';
 

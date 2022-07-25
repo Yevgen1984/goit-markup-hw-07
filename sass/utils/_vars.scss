@@ -1,11 +1,3 @@
-html {
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #FFFFFF;
@@ -16,15 +8,5 @@ html {
     --footer-link-color: #ffffff60;
     --contact-text-color: #757575;
     --studio-text-color: #000000;
-    --portfolio-border-color: #ECECEC;
-    --border-line-color:#ECECEC;
-    --project-line-color: #EEEEEE;
-    --customer-icon-color: #AFB1B8;}
-
-li {
-    list-style:
-        none;}
-
-
-
-    /*<div class="main-container">*/
+    --border-line-color: #ECECEC;
+    }

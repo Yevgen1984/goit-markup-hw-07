@@ -297,7 +297,7 @@
           width: 270px;
           }
     
-          .thumb {
+          /* .thumb {
             padding: 25px 100px;
           }
     
@@ -305,8 +305,8 @@
             display: block;
             height: 120px;
             background-color: #F5F4FA;
-            margin-bottom: 30px;
-          }
+            margin-bottom: 30px;} */
+          
         
          
       /*work*/ 
@@ -370,9 +370,8 @@
        }
       
       .card-set__member {
-        flex-basis: calc((100% - 90px) / 4); 
-        margin-right: 30px;
-  
+        flex-basis: calc((100% - 40px) / 4); 
+        
         align-items:center;
         background-color: var(--primary-background-color);
        }
@@ -518,7 +517,7 @@
         padding-bottom: 0;
       }
   
-      
+      ок
        .basement__contacts-address {
         color: var(--secondary-text-color);
       }

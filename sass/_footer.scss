@@ -1,0 +1,55 @@
+.basement {
+  background-color: var(--secondary-background-color);
+  padding: 60px;
+}
+
+.logo--basement {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.basement__contacts {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.basement__contacts-item {
+  padding-bottom: 9px;
+}
+
+.basement__contacts-item:last-child {
+  padding-bottom: 0;
+}
+
+.basement__contacts-address {
+  color: var(--secondary-text-color);
+}
+
+.basement__contacts-link {
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.basement__contacts-link:hover,
+.basement__contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.basement__social-block {
+  color: var(--primary-background-color);
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  margin-left: 55px;
+  padding-top: 10px;
+}
+
+.basement__container {
+  display: flex;
+}
+
+.socials__item--basement {
+  background-color: rgba(255, 255, 255, 0.1);
+}
