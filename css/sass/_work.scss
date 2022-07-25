@@ -1,0 +1,43 @@
+.section--work {
+    padding-top: 0;
+  } 
+
+   .section__title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+     
+    .card-set__work-thumb {
+    display: inline-block;
+    position: relative;
+    }
+
+  .card-set__work-text {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 100%;
+    left: 100%;
+    
+    transform: translate(-100%,-100%);
+    color: var(--secondary-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    }
+
+  .card-set__work-title {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-bottom: 0;
+    transform: translate(-50%,-50%);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    }
