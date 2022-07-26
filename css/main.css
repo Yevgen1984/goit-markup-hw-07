@@ -9,6 +9,7 @@
   --contact-text-color: #757575;
   --studio-text-color: #000000;
   --border-line-color: #ECECEC;
+  --project-line-color: #EEEEEE;
 }
 
 /*Reset*/
@@ -979,6 +980,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   padding-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .social.basement {
